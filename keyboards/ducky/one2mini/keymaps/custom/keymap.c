@@ -27,16 +27,17 @@ enum Layer {
 
 // Home row mod keys
 // Left-hand home row mods
-#define HOME_A LGUI_T(KC_A)
-#define HOME_O LALT_T(KC_O)
-#define HOME_E LCTL_T(KC_E)
-#define HOME_U LSFT_T(KC_U)
+#define HM_A LGUI_T(KC_A)
+#define HM_S LALT_T(KC_S)
+#define HM_D LCTL_T(KC_D)
+#define HM_F LSFT_T(KC_F)
 
 // Right-hand home row mods
-#define HOME_H RSFT_T(KC_H)
-#define HOME_T RCTL_T(KC_T)
-#define HOME_N LALT_T(KC_N)
-#define HOME_S RGUI_T(KC_S)
+#define HM_J RSFT_T(KC_J)
+#define HM_K RCTL_T(KC_K)
+#define HM_L LALT_T(KC_L)
+#define HM_SCLN RGUI_T(KC_SCLN)
+
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -44,7 +45,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //       2        3        4        5        6        7        8        9        10       11       12       13       14
     QK_GESC, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,  KC_BSPC,
     KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_BSLS,
-    MO(_FN), HOME_A,  HOME_N,  HOME_E,  HOME_U,  KC_G,    KC_H,    HOME_H,  HOME_T,  HOME_N,  HOME_S,  KC_QUOT, KC_NUHS, KC_ENT,
+    MO(_FN), HM_A,    HM_S,    HM_D,    HM_F,    KC_G,    KC_H,    HM_J,    HM_K,    HM_L,    HM_SCLN, KC_QUOT, KC_NUHS, KC_ENT,
     KC_LSFT, KC_NUBS, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,          KC_RSFT,
     KC_LCTL, KC_LGUI, KC_LALT,                            KC_SPC,                             MO(_FN), KC_RALT, DF(_QW), KC_RCTL
   ),
