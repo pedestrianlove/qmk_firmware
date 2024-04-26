@@ -25,5 +25,5 @@
 #define MK_W_INTERVAL_UNMOD 10     /* Time between scroll steps (unmodified) */
 
 // Home row mods
-#define TAPPING_TERM 200
+#define TAPPING_TERM 300
 #define QUICK_TAP_TERM 0
