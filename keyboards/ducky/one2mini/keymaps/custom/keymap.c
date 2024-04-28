@@ -27,30 +27,30 @@ enum Layer {
 #define _FN _FUNCTION
 #define _CLR _COLOUR
 
-// Home row mod keys
-// Left-hand home row mods
-#define HM_A LGUI_T(KC_A)
-#define HM_S LALT_T(KC_S)
-#define HM_D LCTL_T(KC_D)
-#define HM_F LSFT_T(KC_F)
-
-// Right-hand home row mods
-#define HM_J RSFT_T(KC_J)
-#define HM_K RCTL_T(KC_K)
-#define HM_L LALT_T(KC_L)
-#define HM_SCLN RGUI_T(KC_SCLN)
-
+// // Home row mod keys
 // // Left-hand home row mods
-// #define HM_A KC_A
-// #define HM_S KC_S
-// #define HM_D KC_D
-// #define HM_F KC_F
+// #define HM_A LGUI_T(KC_A)
+// #define HM_S LALT_T(KC_S)
+// #define HM_D LCTL_T(KC_D)
+// #define HM_F LSFT_T(KC_F)
 //
 // // Right-hand home row mods
-// #define HM_J KC_J
-// #define HM_K KC_K
-// #define HM_L KC_L
-// #define HM_SCLN KC_SCLN
+// #define HM_J RSFT_T(KC_J)
+// #define HM_K RCTL_T(KC_K)
+// #define HM_L LALT_T(KC_L)
+// #define HM_SCLN RGUI_T(KC_SCLN)
+
+// Left-hand home row mods
+#define HM_A KC_A
+#define HM_S KC_S
+#define HM_D KC_D
+#define HM_F KC_F
+
+// Right-hand home row mods
+#define HM_J KC_J
+#define HM_K KC_K
+#define HM_L KC_L
+#define HM_SCLN KC_SCLN
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
